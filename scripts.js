@@ -73,4 +73,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Feature cards glow follow cursor
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach(function (card) {
+        card.addEventListener('mousemove', function (e) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--glow-x', x + 'px');
+            card.style.setProperty('--glow-y', y + 'px');
+        });
+    });
+
 });
