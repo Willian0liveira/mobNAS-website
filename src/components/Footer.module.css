@@ -1,0 +1,82 @@
+.footer {
+  padding: 60px 0 0;
+  box-shadow: 0 0 80px rgba(0, 255, 136, 0.25), 0 0 160px rgba(0, 255, 136, 0.1);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 64px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.brandDescription {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  max-width: 320px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.colTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+
+.colList {
+  list-style: none;
+}
+
+.colItem {
+  margin-bottom: 8px;
+}
+
+.colLink {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.colLink:hover {
+  color: var(--accent-light);
+}
+
+.bottom {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bottomText {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,17 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  font-size: 1rem;
+}

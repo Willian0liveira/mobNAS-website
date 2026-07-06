@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0 80px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.05) 0%, transparent 70%);
+  filter: blur(40px);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.iconWrapper {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 32px;
+}
+
+.iconWrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 29%;
+  transform: translate(-38%, -50%);
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulseDot 2s ease-in-out infinite;
+  z-index: 0;
+}
+
+.iconWrapper img {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes pulseDot {
+  0%, 100% {
+    transform: translate(-38%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-38%, -50%) scale(1.6);
+    opacity: 0.2;
+  }
+}
+
+.icon {
+  width: 380px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 0 30px rgba(0, 255, 136, 0.3));
+}
+
+.heading {
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+}
