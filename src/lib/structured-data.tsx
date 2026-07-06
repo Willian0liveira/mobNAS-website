@@ -1,4 +1,4 @@
-const BASE_URL = "https://mobnas.com.br";
+import { BASE_URL } from "@/lib/metadata-config";
 
 interface OrganizationData {
   name: string;
