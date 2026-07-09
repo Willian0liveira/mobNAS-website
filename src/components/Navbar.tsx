@@ -81,8 +81,8 @@ export function Navbar() {
               className={`${styles.link} ${styles.cta}`}
               onClick={closeMenu}
             >
-              <GooglePlayIcon size={14} />
-              Baixar
+              
+              Obtenha hoje
             </a>
           </li>
         </ul>

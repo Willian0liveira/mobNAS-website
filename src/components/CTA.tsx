@@ -11,12 +11,12 @@ export function CTA() {
           Pronto para transformar seu Android em um servidor pessoal?
         </h2>
         <p className={styles.subtitle}>
-          O mobNAS já está disponível na Google Play. Baixe agora e transforme
+          O mobNAS já está disponível na Google Play. Obtenha agora e transforme
           seu dispositivo em um NAS pessoal.
         </p>
         <Button href={GOOGLE_PLAY_URL} variant="primary">
           <GooglePlayIcon size={18} />
-          Baixar na Google Play
+          Obtenha na Google Play
         </Button>
       </div>
     </section>

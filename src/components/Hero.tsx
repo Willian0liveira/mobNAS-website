@@ -30,7 +30,7 @@ export function Hero() {
         <div className={styles.actions}>
           <Button href={GOOGLE_PLAY_URL} variant="primary">
             <GooglePlayIcon size={18} />
-            Baixar na Google Play
+            Obtenha na Google Play
           </Button>
           <Button href="#features" variant="secondary">
             Conhecer Recursos
