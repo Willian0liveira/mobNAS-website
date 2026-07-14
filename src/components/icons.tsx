@@ -88,13 +88,11 @@ export function ShareIcon({ size = 32, className }: IconProps) {
       strokeLinejoin="round"
       className={className}
     >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M8.56 2.69 12 12l3.44-9.31" />
-      <path d="M2.69 8.56 12 12l-9.31 3.44" />
-      <path d="M2.69 15.44 12 12l-9.31-3.44" />
-      <path d="M15.44 21.31 12 12l3.44 9.31" />
-      <path d="M21.31 15.44 12 12l9.31-3.44" />
-      <path d="M21.31 8.56 12 12l9.31 3.44" />
+      <circle cx="18" cy="5" r="3" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="19" r="3" />
+      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
     </svg>
   );
 }

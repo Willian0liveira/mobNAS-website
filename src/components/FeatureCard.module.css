@@ -41,7 +41,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 255, 136, 0.15);
   border-radius: 12px;
   color: var(--accent);
   margin-bottom: 20px;

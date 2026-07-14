@@ -30,7 +30,6 @@ export function HowItWorks() {
     <section id="how-it-works" className="section section-dark">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Como Funciona</span>
           <h2>Pronto em minutos</h2>
           <p>
             Do zero ao seu servidor pessoal em poucos passos. Sem IP fixo, sem
