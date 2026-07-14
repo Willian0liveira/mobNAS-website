@@ -30,7 +30,7 @@ const features = [
   {
     title: "Acesso Universal",
     description:
-      "Funciona com Windows Explorer, macOS Finder, Linux e qualquer gerenciador de arquivos do Android.",
+      "Movido pelo protocolo webDAV! Funciona com Windows Explorer, macOS Finder e Linux.",
   },
   {
     title: "Ligado 24 Horas",
