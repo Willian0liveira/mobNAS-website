@@ -37,9 +37,7 @@ export function Hero() {
           mobile pessoal
         </h1>
         <p className={styles.subtitle}>
-          Transforme dispositivos Android em nuvem de arquivos como servidor.
-          Diga adeus para serviços de armazenamento pagos mensalmente e tenha
-          controle dos seus arquivos.
+          Transforme dispositivos Android em nuvem de arquivos como servidor. Diga adeus para serviços de armazenamento pagos mensalmente. Tenha o controle a e privacidade dos seus arquivos.
         </p>
         <div className={styles.actions}>
           <Button href={GOOGLE_PLAY_URL} variant="primary">
