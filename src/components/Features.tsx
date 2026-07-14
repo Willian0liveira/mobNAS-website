@@ -20,7 +20,7 @@ const features = [
   {
     title: "Compartilhamento",
     description:
-      "Crie links para enviar arquivos para quem quiser. Com ou sem senha, com validade de 1 hora a para sempre.",
+      "Crie links para compartilhar arquivos com quem quiser. Defina senha e data de expiração para maior segurança.",
   },
   {
     title: "Segurança Integrada",
