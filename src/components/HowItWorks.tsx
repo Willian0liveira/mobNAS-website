@@ -21,7 +21,7 @@ const steps = [
     number: 4,
     title: "Pronto!",
     description:
-      "Seu servidor pessoal está online. Acesse pelo navegador, pelo app ou direto do navegador.",
+      "Seu servidor pessoal está online. Acesse diretamente do navegador.",
   },
 ];
 
