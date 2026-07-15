@@ -34,6 +34,16 @@ export function Footer() {
                   Como Funciona
                 </Link>
               </li>
+              <li className={styles.colItem}>
+                <a
+                  href="https://github.com/Willian0liveira/mobNAS-documentacao"
+                  target="_blank"
+                  rel="noopener"
+                  className={styles.colLink}
+                >
+                  Documentação
+                </a>
+              </li>
             </ul>
           </div>
           <div>
