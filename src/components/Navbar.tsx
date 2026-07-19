@@ -75,6 +75,17 @@ export function Navbar() {
           </li>
           <li>
             <a
+              href="https://github.com/Willian0liveira/mobNAS-documentacao"
+              target="_blank"
+              rel="noopener"
+              className={styles.link}
+              onClick={closeMenu}
+            >
+              Documentação
+            </a>
+          </li>
+          <li>
+            <a
               href={GOOGLE_PLAY_URL}
               target="_blank"
               rel="noopener"
