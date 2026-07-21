@@ -1,3 +1,6 @@
+import { GitHubIcon } from "@/components/icons";
+import { Button } from "@/components/Button";
+import { GITHUB_DOCS_URL } from "@/constants/links";
 import styles from "./HowItWorks.module.css";
 
 const steps = [
@@ -44,6 +47,15 @@ export function HowItWorks() {
               <p className={styles.description}>{step.description}</p>
             </div>
           ))}
+        </div>
+        <div className={styles.docs}>
+          <p className={styles.docsText}>
+            Saiba mais detalhes acessando a documentação do mobNAS no GitHub
+          </p>
+          <Button href={GITHUB_DOCS_URL} variant="primary">
+            <GitHubIcon size={18} />
+            Acesse aqui a documentação
+          </Button>
         </div>
       </div>
     </section>
